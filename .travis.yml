@@ -11,7 +11,7 @@ script:
   - zip dist.zip -r dist
 deploy:
   - provider: releases
-    api-key: $GITHUB_TOKEN
+    api-key: 3635a1660b33794a4259dfd37d26cc24cdd9a6e8
     file: ./dist.zip
     skip-cleanup: true
     on:
@@ -19,7 +19,7 @@ deploy:
   - provider: pages
     local-dir: dist
     skip-cleanup: true
-    github-token: $GITHUB_TOKEN
+    github-token: 3635a1660b33794a4259dfd37d26cc24cdd9a6e8
     keep-history: true
     on:
       branch: master
